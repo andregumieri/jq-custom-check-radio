@@ -1,0 +1,30 @@
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+.checkAndRadio-span {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	width: 15px;
+	height: 15px;
+}
+
+.checkAndRadio-checkbox,
+.checkAndRadio-radio {
+	background-image: url(img/radio-check.png);
+}
+
+.checkAndRadio-checkbox-true { background-position: 0 -15px; }
+.checkAndRadio-checkbox-false { background-position: 0 0; }
+.checkAndRadio-radio-false { background-position: -15px 0; }
+.checkAndRadio-radio-true { background-position: -15px -15px; }
+
+form {
+	padding: 10px;
+	border: 1px dashed #ccc;
+}
+
+form>div {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>Custom Check & Radio jQuery Plugin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="sample.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<h1>Custom Check & Radio jQuery Plugin Samples</h1>
+		<h2>Apply to all radio and radio inputs</h2>
+		<p><strong>HTML code</strong></p>
+		<pre>
+&lt;form id="form1"&gt;
+	&lt;div&gt;
+		Radio: Group 1&lt;br /&gt;
+		&lt;input type="radio" name="form1-radio" /&gt; Radio 1
+		&lt;input type="radio" name="form1-radio" /&gt; Radio 2
+		&lt;input type="radio" name="form1-radio" /&gt; Radio 3
+	&lt;/div&gt;
+	
+	&lt;div&gt;
+		Radio: Group 2&lt;br /&gt;
+		&lt;input type="radio" name="form1-radio2" /&gt; Radio 1
+		&lt;input type="radio" name="form1-radio2" /&gt; Radio 2
+		&lt;input type="radio" name="form1-radio2" /&gt; Radio 3
+	&lt;/div&gt;
+&lt;/form&gt;
+
+&lt;div&gt;
+	Checkboxes&lt;br /&gt;
+	&lt;label&gt;&lt;input type="checkbox" name="form1-check-1" /&gt; Check 1&lt;/label&gt;
+	&lt;label&gt;&lt;input type="checkbox" checked="checked" name="form1-check-2" /&gt; Check 2&lt;/label&gt;
+	&lt;label&gt;&lt;input type="checkbox" name="form1-check-3" /&gt; Check 3&lt;/label&gt;
+	&lt;label&gt;&lt;input type="checkbox" checked="checked" name="form1-check-4" /&gt; Check 4&lt;/label&gt;
+	&lt;label&gt;&lt;input type="checkbox" name="form1-check-5" /&gt; Check 5&lt;/label&gt;
+&lt;/div&gt;
+		</pre>
+		
+		<p><strong>Javascript code</strong></p>
+		<pre>
+$("#form1 input[type=radio],#form1 input[type=checkbox]").checkAndRadio();
+		</pre>
+		
+		<p><strong>Result</strong></p>
+		<form id="form1">
+			<div>
+				Radio: Group 1<br />
+				<label><input type="radio" name="form1-radio" /> Radio 1</label>
+				<label><input type="radio" name="form1-radio" /> Radio 2</label>
+				<label><input type="radio" name="form1-radio" /> Radio 3</label>
+			</div>
+			
+			<div>
+				Radio: Group 2<br />
+				<label><input type="radio" name="form1-radio2" /> Radio 1</label>
+				<label><input type="radio" name="form1-radio2" /> Radio 2</label>
+				<label><input type="radio" checked="checked" name="form1-radio2" /> Radio 3</label>
+			</div>
+			
+			<div>
+				Checkboxes<br />
+				<label><input type="checkbox" name="form1-check-1" /> Check 1</label>
+				<label><input type="checkbox" checked="checked" name="form1-check-2" /> Check 2</label>
+				<label><input type="checkbox" name="form1-check-3" /> Check 3</label>
+				<label><input type="checkbox" checked="checked" name="form1-check-4" /> Check 4</label>
+				<label><input type="checkbox" name="form1-check-5" /> Check 5</label>
+			</div>
+		</form>		
+
+		<script type="text/javascript" src="../lib/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../src/jquery-checkandradio-1.0.js"></script>
+		<script type="text/javascript" src="sample.js"></script>
+	</body>
+</html>
